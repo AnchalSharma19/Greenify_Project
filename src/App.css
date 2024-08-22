@@ -1,0 +1,31 @@
+.App {
+  font-family: 'Georgia', serif;
+  text-align: center;
+  background-color: #f8f4ef;
+}
+
+/* App.css */
+.background {
+  background-image: url('https://images.unsplash.com/photo-1670509077602-d9fb46a03172?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}

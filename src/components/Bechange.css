@@ -1,0 +1,149 @@
+.bechange-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    padding-top: 0px;
+    margin-top: 0px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    flex-direction: row;
+}
+
+
+.bechange-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.image-section {
+    position: relative;
+}
+
+.recycle-image {
+    width: 600px;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
+
+.overlay-text p {
+    color: white;
+}
+
+.text-section {
+    margin-left: 50px;
+    text-align: left;
+    margin-bottom: 30px;
+
+}
+
+.get-started-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.heading_one {
+    font-size: 30px;
+    text-align: left;
+}
+
+.heading_two {
+    font-size: 50px;
+}
+
+.get-started-button:hover {
+    background-color: #d81b60;
+}
+
+
+@media (max-width: 767px) {
+    .bechange-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .recycle-image {
+        width: 100%;
+    }
+
+    .text-section {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .get-started-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .heading_two {
+        font-size: 30px;
+    }
+
+    .heading_one {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .bechange-container {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .recycle-image {
+        width: 80%;
+    }
+
+    .text-section {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .get-started-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+}
+
+
+@media (min-width: 1025px) {
+    .bechange-container {
+        flex-direction: row;
+        padding: 50px;
+    }
+
+    .recycle-image {
+        width: 600px;
+    }
+
+    .text-section {
+        margin-left: 50px;
+        text-align: left;
+    }
+
+    .get-started-button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}

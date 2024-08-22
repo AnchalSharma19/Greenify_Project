@@ -1,0 +1,70 @@
+.footernew {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    background-image: url('https://img.freepik.com/free-vector/gold-luxury-background_23-2148624171.jpg?t=st=1724255847~exp=1724259447~hmac=82b414e69c18337dd870abfd32a8fdd123a0c1f1673fa733d6853f797cc52f6d&w=1800');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 120px;
+
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: white;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 1em;
+    color: white;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}

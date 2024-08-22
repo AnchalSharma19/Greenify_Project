@@ -1,0 +1,128 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.get-started-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo_1 {
+    color: #333;
+    font-size: 2.7rem;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    font-family: 'Georgia', serif;
+    font-weight: 800;
+}
+
+.new-user,
+.new-user-bottom {
+    margin: 10px 0;
+}
+
+.new-user a,
+.new-user-bottom a,
+.forgot-password a {
+    color: #009688;
+    text-decoration: none;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    font-size: 16px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #ff007f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    margin: 10px 0;
+}
+
+.social-login {
+    width: 100%;
+    text-align: center;
+}
+
+.social-button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.social-button.apple {
+    background-color: #000000;
+}
+
+.social-button.facebook {
+    background-color: #3b5998;
+}
+
+.social-button.google {
+    background-color: #db4437;
+}
+
+.app-version {
+    margin-top: 20px;
+    color: #c4c4c4;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .get-started-container {
+        padding: 15px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .input-field {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .login-button,
+    .social-button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .app-version {
+        font-size: 12px;
+    }
+}

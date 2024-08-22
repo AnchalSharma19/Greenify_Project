@@ -1,0 +1,187 @@
+/* Work.css */
+.work-container {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: 'Georgia', serif;
+    margin-top: 0px;
+    padding-top: 0%;
+}
+
+.work-title {
+    font-size: 2.7em;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-in-out;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+.work-description {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+    animation: fadeIn 1s ease-in-out;
+    font-family: 'Arial', sans-serif;
+}
+
+.work-subdescription {
+    margin-bottom: 40px;
+    font-size: 1.5em;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.work-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.step {
+    width: 30%;
+    margin-bottom: 40px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.details {
+    color: green
+}
+
+.step-image {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.step-image img {
+    max-width: 100%;
+    height: 300px;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.step h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+
+}
+
+.step p {
+    font-size: 1.1em;
+    color: #666;
+    font-family: 'Arial', sans-serif;
+
+}
+
+.step-image img:hover {
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+    .work-title {
+        font-size: 2em;
+    }
+
+    .work-description {
+        font-size: 1.1em;
+    }
+
+    .work-subdescription {
+        font-size: 1.3em;
+    }
+
+    .step {
+        width: 45%;
+    }
+
+    .step-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .step h3 {
+        font-size: 1.2em;
+    }
+
+    .step p {
+        font-size: 0.9em;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .work-title {
+        font-size: 2.5em;
+    }
+
+    .work-description {
+        font-size: 1em;
+    }
+
+    .work-subdescription {
+        font-size: 1.2em;
+    }
+
+    .step {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .step-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .step h3 {
+        font-size: 1.1em;
+    }
+
+    .step p {
+        font-size: 0.8em;
+    }
+}
