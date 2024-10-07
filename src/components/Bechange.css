@@ -9,6 +9,7 @@
     transform: translateY(50px);
     transition: opacity 1s ease-out, transform 1s ease-out;
     flex-direction: row;
+    margin-top: 100px;
 }
 
 

@@ -20,7 +20,6 @@ const Header = () => {
                 <a href="#AboutUs" onClick={toggleMenu}>About</a>
                 <a href="#Work" onClick={toggleMenu}>How it works</a>
                 <a href="#Collect" onClick={toggleMenu}>What we collect</a>
-                <a href="#Testimonials" onClick={toggleMenu}>Feedback</a>
                 <a href="#Contact" onClick={toggleMenu}>Contact</a>
             </nav>
         </header>

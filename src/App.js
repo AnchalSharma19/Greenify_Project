@@ -6,13 +6,11 @@ import Hero from './components/Hero';
 import AboutUs from './components/AboutUs';
 import Work from './components/Work';
 import Collect from './components/Collect';
-import Impact from './components/Impact';
-import Testimonials from './components/Testimonials';
 import Bechange from './components/Bechange';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
 import Footernew from './components/Footernew';
 import Getstarted from './components/Getstarted';
+import SignUp from './components/SignUp';
+import Forgetpass from './components/ForgetPass';
 
 import './App.css';
 
@@ -29,15 +27,13 @@ function App() {
               <AboutUs />
               <Work />
               <Collect />
-              <Impact />
-              <Testimonials />
               <Bechange />
-              <Contact />
-              <Footer />
               <Footernew />
             </>
           } />
           <Route path="/Getstarted" element={<Getstarted />} />
+          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/Forgetpass" element={<Forgetpass />} />
         </Routes>
       </div>
     </Router>

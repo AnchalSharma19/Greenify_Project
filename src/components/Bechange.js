@@ -42,6 +42,7 @@ const Bechange = () => {
                     <h1>Do it Every day.</h1>
                     <p className="logo-text">Go Greenify</p>
                 </div>
+
             </div>
             <div className="text-section">
                 <h2 className="heading_one">Iniciate the change.</h2>
