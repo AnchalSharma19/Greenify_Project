@@ -15,7 +15,11 @@ const Forgetpass = () => {
                 <input type="email" placeholder="Email" className="input-field" />
 
                 <button type="submit" className="login-button">Submit</button>
+                <br />
+                <br />
+                <a href="" onClick={handleGoToLoginClick}>Go to LogIn</a>
             </form>
+        
         </div>
     );
 };
