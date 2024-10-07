@@ -1,7 +1,17 @@
 import React from 'react';
 import './ForgetPass.css';
+import { useNavigate } from 'react-router-dom';
 
 const Forgetpass = () => {
+
+    const navigate = useNavigate();
+
+
+    const handleGoToLoginClick = (e) => {
+        e.preventDefault();
+        navigate('/Getstarted'); // Navigate to the Getstarted page
+    };
+    
     return (
         <div id="Getstarted" className="forgetpass-container">
             <p className="new-user">
