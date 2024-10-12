@@ -1,0 +1,168 @@
+* {
+    font-family: 'Georgia', serif;
+}
+
+.wwc-container {
+    padding: 10;
+    margin: 10;
+    background-color: #f8f4ef;
+}
+
+.wwc-header {
+    display: relative;
+
+    background-image: url('https://img.freepik.com/premium-photo/promoting-waste-recycling-with-green-leaves-recycling-symbol-natural-settings_1113325-9820.jpg');
+    background-size: cover;
+    /* Ensures the image covers the entire section */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    height: 80vh;
+    /* Full viewport height */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+
+}
+
+.wwc-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black overlay with 50% opacity */
+    z-index: 1;
+    /* Keeps the overlay behind the text */
+}
+
+.wwc-header * {
+    position: relative;
+    /* Ensures text and other content stay above the overlay */
+    z-index: 2;
+}
+
+
+
+.header-text {
+    /* color: whiteb; */
+    padding-left: 50px;
+    top: 15vw;
+    float: left;
+    font-weight: 800;
+    z-index: 2;
+    font-size: 4em;
+}
+
+.middle,
+.plus {
+    margin: 50px;
+    padding: 10px;
+}
+
+.wwc-info {
+    margin-bottom: 50px;
+}
+
+.wwc-info h2 {
+    color: #1D3466;
+    font-size: 2.7em;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+    font-weight: 600;
+
+}
+
+.wwc-info p {
+    font-size: 1.1em;
+    color: #555;
+    animation: fadeIn 1s ease-in-out;
+    font-family: 'Arial', sans-serif;
+    margin: 30px;
+
+
+}
+
+
+
+.wwc-items-wrap {
+    margin: 10;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+
+}
+
+.wwc-item {
+    display: flex;
+    width: 50vw;
+    border: #D3D3D3 solid;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    transition: transform 0.2s ease-in-out;
+    background-color: whitesmoke;
+
+
+}
+
+.wwc-item:hover {
+    transform: scale(1.02);
+}
+
+.item-img-wrap img,
+.plus-img-wrap img {
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+}
+
+.item-info {
+    margin: 20px;
+
+}
+
+.item-info h3 {
+    margin: 10px;
+    color: #1D3466;
+    font-size: larger;
+
+}
+
+.item-info p {
+    margin: 20px;
+    font-size: medium;
+}
+
+.plus {
+    justify-content: center;
+    /* width: 50vw; */
+    display: flex;
+}
+
+.plus-wrap {
+    display: flex;
+    justify-self: center;
+    width: 50vw;
+}
+
+.plus-text {
+    margin: 20px;
+}
+
+.plus-text h1 {
+    color: #1D3466;
+
+}
+
+.plus-text p {
+
+    margin: 20px;
+    font-size: medium;
+}
