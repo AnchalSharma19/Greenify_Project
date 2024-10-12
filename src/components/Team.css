@@ -1,0 +1,239 @@
+/* Container for the entire team section */
+.team-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f8f4ef;
+}
+
+/* Team image and overlay */
+.team-image-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.team-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.quote-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0 20px;
+}
+
+.quote-overlay h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.quote-overlay p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: white;
+}
+
+/* Founders section */
+.founders-section {
+    padding: 100px 0;
+}
+
+.founders-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #1D3466;
+}
+
+/* Founders List */
+.founders-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Individual founder profile */
+.founder-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.founder-profile:hover {
+    transform: translateY(-10px);
+}
+
+/* Founder image */
+.founder-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+/* Founder name and title */
+.founder-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.founder-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+/* Founder description */
+.founder-info p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+
+/* For large desktop screens (1200px and above) */
+@media (min-width: 1200px) {
+    .founder-info h3 {
+        font-size: 2rem;
+    }
+
+    .founder-info h4 {
+        font-size: 1.4rem;
+    }
+
+    .founder-info p {
+        font-size: 1.1rem;
+    }
+}
+
+/* For tablets and medium screens (768px to 1199px) */
+@media (max-width: 1199px) {
+    .team-image-container {
+        height: 300px;
+    }
+
+    .quote-overlay h2 {
+        font-size: 2.2rem;
+    }
+
+    .quote-overlay p {
+        font-size: 1.3rem;
+    }
+
+    .founder-profile {
+        max-width: 90%;
+        /* Adjust the max-width for tablets */
+    }
+
+    .founder-info h3 {
+        font-size: 1.6rem;
+    }
+
+    .founder-info h4 {
+        font-size: 1.2rem;
+    }
+
+    .founder-info p {
+        font-size: 1rem;
+    }
+}
+
+/* For small devices and tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .quote-overlay h2 {
+        font-size: 1.8rem;
+    }
+
+    .quote-overlay p {
+        font-size: 1.1rem;
+    }
+
+    .founder-profile {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        /* Stacking for small devices */
+    }
+
+    .founder-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .founder-info h3 {
+        font-size: 1.4rem;
+    }
+
+    .founder-info h4 {
+        font-size: 1.1rem;
+    }
+
+    .founder-info p {
+        font-size: 0.95rem;
+    }
+}
+
+/* For very small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .team-image-container {
+        height: 250px;
+    }
+
+    .quote-overlay h2 {
+        font-size: 1.6rem;
+    }
+
+    .quote-overlay p {
+        font-size: 0.9rem;
+    }
+
+    .founders-section {
+        padding: 50px 0;
+    }
+
+    .founder-profile {
+        padding: 15px;
+    }
+
+    .founder-image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .founder-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .founder-info h4 {
+        font-size: 1rem;
+    }
+
+    .founder-info p {
+        font-size: 0.85rem;
+    }
+}

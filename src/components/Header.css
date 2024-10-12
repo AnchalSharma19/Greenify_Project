@@ -17,13 +17,57 @@
 .logo {
     font-size: 30px;
     font-weight: bold;
-    color: white;
+    color: #379c2b;
+    display: flex;
+}
+
+.symbol {
+    display: inline;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.logo_text {
+    padding-left: 10px;
+
 }
 
 .nav {
     display: flex;
     flex-wrap: wrap;
     transition: max-height 0.3s ease-in-out;
+    flex-direction: column;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(152, 151, 151);
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown-content link:a {
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .nav a {
@@ -35,7 +79,8 @@
 }
 
 .nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #000;
 }
 
 .menu-icon {
