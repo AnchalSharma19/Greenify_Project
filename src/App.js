@@ -37,6 +37,17 @@ function App() {
           { /*<Route path="/Hero" element={<Layout><Hero /></Layout>} /> */}
           <Route path="/OurApproach" element={<Layout><OurApproach /></Layout>} />
           <Route path="/HowToPack" element={<Layout><HowToPack /></Layout>} />
+          {/* wwc */}
+					<Route exact path="/WhatWeCollect" element={<Layout><WhatWeCollect /></Layout>}/>
+					{/* What we collect items*/}
+					<Route exact path="/Misfits" element={<Layout> <Misfits /></Layout>}/>
+					<Route exact path="/SoftPlastic" element={ <Layout><SoftPlastic /></Layout>}/>
+					<Route path="/EWaste" element={ <Layout> <EWaste /> </Layout>}/>
+					<Route path="/ClothesTextiles" element={ <Layout> <ClothesTextiles /> </Layout>} />
+					{/* sustainability */}
+					<Route path="/Sustainability" element={ <Layout> <Sustainability /> </Layout> }/>
+					{/* Contact us */}
+					<Route path="/ContactUs" element={ <Layout> <ContactUs /> </Layout> }/>
 
         </Routes>
       </div>
