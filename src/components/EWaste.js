@@ -1,9 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import e1 from "../assets/images/e1charger.jpg";
-import e2 from "../assets/images/e2dryer.jpg";
-import e3 from "../assets/images/e3brokenPhone.jpeg";
-import e4 from "../assets/images/e4.jpg";
+import e1 from "../images/e1charger.jpg";
+import e2 from "../images/e2dryer.jpg";
+import e3 from "../images/e3brokenPhone.jpeg";
+import e4 from "../images/e4.jpg";
 import "./WwcItem.css";
 
 import packBackground from "../images/topbackground.png";
