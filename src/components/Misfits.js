@@ -1,9 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import m1 from "../assets/images/m1baloon.jpg";
-import m2 from "../assets/images/m2cd.jpg";
-import m3 from "../assets/images/m3foodPacket.jpg";
-import m4 from "../assets/images/m4hanger.jpeg";
+import m1 from "../images/m1baloon.jpg";
+import m2 from "../images/m2cd.jpg";
+import m3 from "../images/m3foodPacket.jpg";
+import m4 from "../images/m4hanger.jpeg";
 import packBackground from "../images/topbackground.png";
 import "./WwcItem.css";
 
