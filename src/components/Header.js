@@ -69,8 +69,9 @@ const Header = () => {
                     )}
                 </div>
 
-                <a href="#Collect">What we Collect</a>
-                <Link to="/contact" onClick={toggleMenu}>Contact Us</Link>
+                <Link to="/WhatWeCollect">What we Collect</Link>
+				<Link to="/Sustainability" onClick={toggleMenu}>Sustainability</Link>
+				<Link to="/ContactUs" onClick={toggleMenu}>Contact Us</Link>
             </nav>
         </header>
     );
