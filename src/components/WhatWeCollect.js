@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import {BrowserRouter, Link} from "react-router-dom";
-import baloon from "../assets/images/wwc/baloon.jpg";
-import brokenPhone from "../assets/images/wwc/brokenPhone.jpg";
-import polybag1 from "../assets/images/wwc/polybag1.jpg";
-import wornShirt from "../assets/images/wwc/wornShirt.jpg";
-import WwcPlus from "../assets/images/wwc/wwcPlus.jpg";
+import {Link} from "react-router-dom";
+import wornShirt from "../images/c0wornShirt.jpg";
+import brokenPhone from "../images/e0brokenPhone.jpg";
+import baloon from "../images/m0batteries.jpeg";
+import polybag1 from "../images/p0polybag1.jpg";
+import WwcPlus from "../images/wwcPlus.jpg";
 import "./WhatWeCollect.css";
 
 const WhatWeCollect = () => {
@@ -76,11 +76,9 @@ const WhatWeCollect = () => {
 									<br />
 									{item.Eg}
 								</p>
-								<BrowserRouter>
-									<Link to={`/${item.route}`}>
-										Find Out More
-									</Link>
-								</BrowserRouter>
+								{/* <BrowserRouter> */}
+								<Link to={`/${item.route}`}>Find Out More</Link>
+								{/* </BrowserRouter> */}
 							</div>
 						</div>
 					))}
@@ -100,9 +98,9 @@ const WhatWeCollect = () => {
 							<br />
 							E.g. clunky cardboard or big electronics.
 						</p>
-						<BrowserRouter>
-							<Link to="/Plus">Find Out More</Link>
-						</BrowserRouter>
+						{/* <BrowserRouter> */}
+						<Link to="/Plus">Find Out More</Link>
+						{/* </BrowserRouter> */}
 					</div>
 				</div>
 			</div>
