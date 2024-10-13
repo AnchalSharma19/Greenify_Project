@@ -1,9 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import c1 from "../assets/images/c1tshirt.jpeg";
-import c2 from "../assets/images/c2shoes1.jpeg";
-import c3 from "../assets/images/c3handbag.jpeg";
-import c4 from "../assets/images/c4towels.jpg";
+import c1 from "../images/c1tshirt.jpeg";
+import c2 from "../images/c2shoes1.jpeg";
+import c3 from "../images/c3handbag.jpeg";
+import c4 from "../images/c4towels.jpg";
 import packBackground from "../images/topbackground.png";
 import "./WwcItem.css";
 
