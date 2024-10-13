@@ -1,17 +1,19 @@
 * {
-    font-family: 'Georgia', serif;
+    font-family: 'Arial', serif;
 }
 
 .wwc-container {
-    padding: 10;
-    margin: 10;
+    padding: 0;
+    margin: 0;
+    width: 100%;
     background-color: #f8f4ef;
 }
 
 .wwc-header {
-    display: relative;
+    display: flex;
 
-    background-image: url('https://img.freepik.com/premium-photo/promoting-waste-recycling-with-green-leaves-recycling-symbol-natural-settings_1113325-9820.jpg');
+    /* background-image: url('https://img.freepik.com/premium-photo/promoting-waste-recycling-with-green-leaves-recycling-symbol-natural-settings_1113325-9820.jpg'); */
+    background-image: url('https://img.freepik.com/free-photo/recycle-concept-with-box-rubbish_23-2147825494.jpg?ga=GA1.1.831887527.1728798221&semt=ais_hybrid-rr-similar');
     background-size: cover;
     /* Ensures the image covers the entire section */
     background-position: center;
@@ -23,7 +25,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    text-align: center;
+    /* text-align: center; */
     position: relative;
 
 }
@@ -35,32 +37,23 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     /* Black overlay with 50% opacity */
     z-index: 1;
     /* Keeps the overlay behind the text */
 }
 
-.wwc-header * {
-    position: relative;
-    /* Ensures text and other content stay above the overlay */
-    z-index: 2;
-}
+
 
 
 
 .header-text {
-    /* color: whiteb; */
-    padding-left: 50px;
-    top: 15vw;
-    float: left;
     font-weight: 800;
     z-index: 2;
     font-size: 4em;
 }
 
-.middle,
-.plus {
+.middle {
     margin: 50px;
     padding: 10px;
 }
@@ -73,6 +66,7 @@
     color: #1D3466;
     font-size: 2.7em;
     margin-bottom: 20px;
+    margin-top: 20px;
     animation: fadeInDown 1s ease-in-out;
     font-weight: 600;
 
@@ -93,6 +87,8 @@
 .wwc-items-wrap {
     margin: 10;
     justify-content: center;
+    justify-content: space-evenly;
+    row-gap: 30px;
     display: flex;
     flex-wrap: wrap;
     /* justify-content: flex-start; */
@@ -101,13 +97,13 @@
 
 .wwc-item {
     display: flex;
-    width: 50vw;
+    width: 600px;
     border: #D3D3D3 solid;
     border-radius: 15px;
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
     transition: transform 0.2s ease-in-out;
-    background-color: whitesmoke;
+    background-color: seashell;
 
 
 }
@@ -144,12 +140,17 @@
     justify-content: center;
     /* width: 50vw; */
     display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
 }
 
 .plus-wrap {
     display: flex;
     justify-self: center;
-    width: 50vw;
+    width: 600px;
+    margin: 15px;
+    padding-right: 50px;
 }
 
 .plus-text {
@@ -165,4 +166,39 @@
 
     margin: 20px;
     font-size: medium;
+}
+
+@media only screen and (max-width: 740px) {
+    .wwc-container {
+        overflow: hidden;
+    }
+
+    .wwc-item {
+        display: block;
+    }
+
+    .item-img-wrap {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .middle {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .plus {
+        width: 100%;
+        margin: auto;
+        margin: 50px;
+        padding: 0;
+    }
+
+    .plus-wrap {
+        display: block;
+    }
+
+    .plus-img-wrap {
+        width: 100%;
+    }
 }
