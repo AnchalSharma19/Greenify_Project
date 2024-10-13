@@ -1,0 +1,184 @@
+:root {
+
+    --hs: 178, 98%;
+    --paper: hsl(var(--hs), 35%);
+    --highlight: hsl(var(--hs), 40%);
+    --shadow: hsl(var(--hs), 25%);
+
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f4ef;
+}
+
+.header-wrap-sus {
+    background-image: url('https://blogs.microsoft.com/wp-content/uploads/prod/2021/04/RE_Earth-day-blog-header-image-1024x576.jpg');
+    background-size: cover;
+    /* Ensures the image covers the entire section */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    height: 80vh;
+    /* Full viewport height */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    display: flex;
+
+}
+
+.header-wrap-sus::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black overlay with 50% opacity */
+    z-index: 1;
+    /* Keeps the overlay behind the text */
+}
+
+.header-wrap-sus * {
+    /* Ensures text and other content stay above the overlay */
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-sus {
+    display: flex;
+    font-weight: 800;
+    z-index: 2;
+    font-size: 5em;
+}
+
+.text-sus-wrap div {
+    margin: auto;
+    padding: 10px;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
+    margin-top: 50px;
+}
+
+.text-title {
+    font-size: larger;
+    /* font-weight: 500; */
+    margin: 5px;
+    padding: 15px;
+    align-self: flex-start;
+    color: #1D3466;
+    font-size: x-large;
+
+}
+
+.text-sus {
+    font-weight: 500;
+    font-size: large;
+}
+
+.des-items {
+    margin-top: 50px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-between;
+    row-gap: 40px;
+}
+
+.des-wrap {
+    /* margin: 5px;
+    padding: 5px; */
+    display: flex;
+    align-items: center;
+    width: 35em;
+    border: #F7D118 solid;
+    border-radius: 25px;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: seashell;
+    transition: transform 0.3s ease-in-out;
+}
+
+.des-wrap:hover {
+    transform: scale(1.05);
+}
+
+.des-letter-wrap h1 {
+    font-family: "Titillium Web", sans-serif;
+    font-size: clamp(8rem, 23vw + 1rem, 20rem);
+    letter-spacing: 0.1em;
+    display: grid;
+    place-items: center;
+    grid-template-areas: "text";
+    background-clip: text;
+    text-emphasis-color: transparent;
+    color: transparent;
+    width: 70%;
+    background-image: linear-gradient(305deg, tomato, gold, cyan);
+    margin: 0;
+
+    &>*,
+    &::after {
+        grid-area: text;
+    }
+
+    &::after {
+        content: attr(data-text);
+        color: var(--paper);
+        transform: translate(0.1em, 0.1em);
+        filter: drop-shadow(0.015em 0.015em 0.025em var(--shadow));
+        background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(var(--highlight), var(--paper));
+    }
+}
+
+.des-wrap body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--paper);
+}
+
+.list-items-sus {
+    /* width: 80%;
+    margin: auto; */
+    padding: 5px;
+    margin: 10px;
+}
+
+.list-items-sus li {
+    font-size: larger;
+    margin: 5px;
+    padding: 2px;
+}
+
+@media only screen and (max-width: 760px) {
+    .des-wrap {
+        display: block;
+    }
+
+    .des-letter-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .list-items-sus {
+        width: 70%;
+        margin: auto;
+    }
+
+}
