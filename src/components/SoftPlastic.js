@@ -1,9 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import p2 from "../assets/images/p2polybag2.jpg";
-import p3 from "../assets/images/p3softPlastic.jpeg";
-import p4 from "../assets/images/p4ziplock.jpg";
-import p1 from "../assets/images/polybag4.jpeg";
+import p2 from "../images/p2polybag2.jpg";
+import p3 from "../images/p3softPlastic.jpeg";
+import p4 from "../images/p4ziplock.jpg";
+import p1 from "../images/polybag4.jpeg";
 import packBackground from "../images/topbackground.png";
 import "./WwcItem.css";
 
