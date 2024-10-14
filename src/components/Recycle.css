@@ -1,0 +1,234 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Recycle Container */
+.recycle-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #02AFAA;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem;
+    width: 100%;
+    max-width: 1600px;
+    margin: 2rem auto;
+    margin-top: 80px;
+    height: 500px;
+}
+
+.recycle-text {
+    max-width: 50%;
+}
+
+.recycle-text p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.recycle-text h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+.recycle-button {
+    background-color: #E81E76;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 20px;
+}
+
+.recycle-button:hover {
+    background-color: #F7D118;
+    color: black;
+}
+
+.recycle-image2 img {
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+
+}
+
+/* How it works Section */
+.how-it-works {
+    padding: 2rem;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-top: 50px;
+}
+
+.step {
+    flex: 1 1 calc(25% - 2rem);
+    margin: 1rem;
+    text-align: center;
+    background-color: #f8f4ef;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.step img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.step h3 {
+    color: #1D3466;
+    margin-top: 15px;
+}
+
+.step p {
+    color: #555;
+}
+
+/* Traceability Section */
+.traceability-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 100px;
+    margin-top: 100px;
+}
+
+.traceability-video {
+    flex: 1 1 40%;
+    margin-right: 2rem;
+}
+
+.traceability-video iframe {
+    width: 100%;
+    /* This will now take up the width of the parent */
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.traceability-text {
+    flex: 1 1 50%;
+    /* Adjust this as needed */
+    text-align: left;
+    /* Align text to the left */
+    margin-left: 1rem;
+}
+
+.traceability-text h2 {
+    color: #1D3466;
+}
+
+/* Second Life Section */
+.second-life-section {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f8f4ef;
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+.second-life-images {
+    flex: 1 1 50%;
+}
+
+.second-life-image-item {
+    text-align: center;
+}
+
+.second-life-image-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.second-life-text {
+    flex: 1 1 50%;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.second-life-text h2 {
+    color: #1D3466;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.social-icons img {
+    margin-right: 10px;
+    width: 100px;
+    border-radius: 10%;
+    /* Adjust size as needed */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .recycle-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .steps-container {
+        flex-direction: column;
+    }
+
+    .step {
+        flex: 1 1 100%;
+    }
+
+    .traceability-container {
+        flex-direction: column;
+    }
+
+    .traceability-video {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .second-life-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .second-life-images {
+        margin-bottom: 1rem;
+    }
+
+    .recycle-image2 img {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .recycle-text h1 {
+        font-size: 2rem;
+    }
+
+    .recycle-text p {
+        font-size: 1rem;
+    }
+
+    .recycle-button {
+        width: 100%;
+    }
+}

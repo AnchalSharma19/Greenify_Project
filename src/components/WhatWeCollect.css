@@ -11,7 +11,7 @@
 .wwc-header {
     display: relative;
 
-    background-image: url('https://img.freepik.com/premium-photo/promoting-waste-recycling-with-green-leaves-recycling-symbol-natural-settings_1113325-9820.jpg');
+    background-image: url('../images/bagimg.png');
     background-size: cover;
     /* Ensures the image covers the entire section */
     background-position: center;

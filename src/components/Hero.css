@@ -1,12 +1,9 @@
 .hero {
-    background-image: url('https://img.freepik.com/free-photo/cute-young-boys-happy-recycle-together_23-2148490296.jpg?t=st=1726935032~exp=1726938632~hmac=ddb07f290cb0bfdc1ce2ce84ab21ac762b52f4e2e25a4a5f743242769c91b744&w=1800');
+    background-image: url('../images/bgimg.png');
     background-size: cover;
-    /* Ensures the image covers the entire section */
     background-position: center;
-    /* Centers the image */
     background-repeat: no-repeat;
     height: 100vh;
-    /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;

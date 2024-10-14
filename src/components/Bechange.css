@@ -9,7 +9,6 @@
     transform: translateY(50px);
     transition: opacity 1s ease-out, transform 1s ease-out;
     flex-direction: row;
-    margin-top: 100px;
 }
 
 
@@ -23,8 +22,9 @@
 }
 
 .recycle-image {
-    width: 600px;
-    height: auto;
+    width: 100px;
+    height: 800px;
+    border-radius: 20px;
 }
 
 .overlay-text {
@@ -112,6 +112,7 @@
 
     .recycle-image {
         width: 80%;
+
     }
 
     .text-section {

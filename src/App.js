@@ -13,6 +13,10 @@ import Forgetpass from './components/ForgetPass';
 import Team from './components/Team';
 import OurApproach from './components/OurApproach';
 import HowToPack from './components/HowToPack';
+import Recycle from './components/Recycle';
+import Process from './components/Process';
+import RecycleProcess from './components/RecycleProcess';
+
 
 import './App.css';
 
@@ -27,6 +31,7 @@ function App() {
               <AboutUs />
               <Work />
               <Collect />
+              <RecycleProcess />
               <Bechange />
             </Layout>
           } />
@@ -37,6 +42,9 @@ function App() {
           { /*<Route path="/Hero" element={<Layout><Hero /></Layout>} /> */}
           <Route path="/OurApproach" element={<Layout><OurApproach /></Layout>} />
           <Route path="/HowToPack" element={<Layout><HowToPack /></Layout>} />
+          <Route path="/Recycle" element={<Layout><Recycle /></Layout>} />
+          <Route path="/Process" element={<Layout><Process /></Layout>} />
+
 
         </Routes>
       </div>

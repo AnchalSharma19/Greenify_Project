@@ -1,11 +1,12 @@
 import React from 'react';
 import './AboutUs.css';
+import aboutus from '../images/aboutus.png';
 
 const AboutUs = () => {
     return (
         <div id="AboutUs" className="about-us-container">
             <div className="about-us-image">
-                <img src="https://img.freepik.com/free-photo/happy-young-woman-throwing-mini-tiffin-box-recycle-dustbin_23-2147839060.jpg?t=st=1726935239~exp=1726938839~hmac=af63bbe3fa378177056621a270363dd6766a6c139c31715822453efdf1fc25ef&w=1800" alt="About Us" />
+                <img src={aboutus} alt="About Us" />
             </div>
             <div className="about-us-content">
                 <h2>Who we are?</h2>
