@@ -95,7 +95,7 @@ const OurApproach = () => {
     return (
 
         <>
-            <div className="full-width-image">
+            <div className="full-width-image2">
                 <img src={packBackground} alt="Full width banner" />
             </div>
             <div className="our-approach-container">
@@ -108,7 +108,7 @@ const OurApproach = () => {
                 </div>
                 <div className="our-approach">
                     <h2>Our Approach</h2>
-                    <p>
+                    <p >
                         At Greenify, our approach to recycling is built on simplicity, accessibility, and community involvement. We understand that effective recycling requires more than just collecting materials; it requires fostering a culture of environmental responsibility.
                     </p>
                 </div>

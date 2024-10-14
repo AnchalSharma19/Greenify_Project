@@ -255,7 +255,7 @@ const Process = () => {
 
     return (
         <>
-            <div className="full-width-image">
+            <div className="full-width-image2">
                 <img src={packBackground} alt="Full width banner" />
             </div>
             <h1 className="heading">Know the Recycling Process</h1>

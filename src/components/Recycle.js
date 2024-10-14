@@ -30,7 +30,7 @@ const RecycleComponent = () => {
 
             {/* New Section: How it works */}
             <div className="how-it-works">
-                <h2>How it works</h2>
+                <h2>How it Works</h2>
                 <p>No magic wand, just a rock-solid process and a trusted network of partners ready to reuse or recycle what we carefully sort. Our sorting guarantees clean, valuable recyclables or items ready for immediate reuse.</p>
 
                 <div className="steps-container">
@@ -72,8 +72,7 @@ const RecycleComponent = () => {
                 </div>
                 <div className="traceability-text">
                     <h2>Traceability</h2>
-                    <p>At RecycleSmart, we meticulously gather data on the resources we retrieve.</p>
-                    <p>The items we collect are taken to our consolidation points where the items are organised to be connected with our recycling & reuse partners.</p>
+                    <p>At RecycleSmart, we meticulously gather data on the resources we retrieve. <br />The items we collect are taken to our consolidation points where the items are organised to be connected with our recycling & reuse partners.</p>
                 </div>
             </div>
 

@@ -12,12 +12,11 @@
 .wwc-header {
     display: flex;
 
-<<<<<<< HEAD
+
     background-image: url('../images/bagimg.png');
-=======
+
     /* background-image: url('https://img.freepik.com/premium-photo/promoting-waste-recycling-with-green-leaves-recycling-symbol-natural-settings_1113325-9820.jpg'); */
     background-image: url('https://img.freepik.com/free-photo/recycle-concept-with-box-rubbish_23-2147825494.jpg?ga=GA1.1.831887527.1728798221&semt=ais_hybrid-rr-similar');
->>>>>>> origin/main
     background-size: cover;
     /* Ensures the image covers the entire section */
     background-position: center;

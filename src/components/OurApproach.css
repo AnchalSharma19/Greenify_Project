@@ -1,4 +1,5 @@
 /* General Container */
+
 .our-approach-container {
     padding: 20px;
     display: flex;
@@ -7,6 +8,23 @@
     background-color: #f8f4ef;
     margin-top: 0px;
 }
+
+
+.full-width-image2 {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 75px;
+}
+
+.full-width-image2 img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
 
 /* About Us and Our Approach sections */
 .about-us,
@@ -26,7 +44,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-p {
+.about-us p {
     font-size: 1.2rem;
     color: #555;
     line-height: 1.6;
@@ -40,8 +58,17 @@ p {
 
 .our-approach h2 {
     font-size: 3rem;
-    margin-top: 90px;
+    margin-top: 60px;
+    color: #1D3466;
 }
+
+.our-approach p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    font-family: 'Georgia', serif;
+}
+
 
 /* Mission Section */
 .mission-section {
@@ -77,21 +104,21 @@ p {
 .mission-content {
     background-color: #f0f0f0;
     padding: 30px;
-    max-width: 600px;
+    max-width: 1000px;
     text-align: center;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .mission-content img {
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 325px;
     margin-bottom: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .mission-content h3 {
-    font-size: 2rem;
+    font-size: 2.7rem;
     margin-bottom: 20px;
     color: #1D3466;
 }
@@ -99,6 +126,8 @@ p {
 .mission-content p {
     font-size: 1.2rem;
     color: #555;
+    line-height: 1.6;
+    margin-top: 15px;
 }
 
 /* Responsive Design */
@@ -166,9 +195,16 @@ p {
 
 }
 
+.approach-container h2 {
+    color: #1D3466;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
 h2 {
     font-size: 3rem;
     margin-bottom: 30px;
+    color: #1D3466;
 }
 
 .principles-grid {
@@ -199,7 +235,7 @@ h2 {
 }
 
 .principle-card h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 

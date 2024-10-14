@@ -9,10 +9,10 @@ import plusItems from '../images/bagPack.png';
 const HowToPack = () => {
     return (
         <>
-            <div className="full-width-image">
+            <div className="full-width-image2">
                 <img src={packBackground} alt="Full width banner" />
             </div>
-            <h2>How To Pack</h2>
+            <h2 className="heading">How To Pack</h2>
             <br />
             <br />
             {/* How to Pack Content */}
