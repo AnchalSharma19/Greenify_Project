@@ -1,11 +1,15 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import {Link} from "react-router-dom";
-import wornShirt from "../images/c0wornShirt.jpg";
-import brokenPhone from "../images/e0brokenPhone.jpg";
-import baloon from "../images/m0batteries.jpeg";
-import polybag1 from "../images/p0polybag1.jpg";
-import WwcPlus from "../images/wwcPlus.jpg";
+import wornShirt from "../images/wwcimg/c0wornShirt.jpg";
+import brokenPhone from "../images/wwcimg/e0brokenPhone.jpg";
+import g0 from "../images/wwcimg/g0Meyerton Glass.jpeg";
+import baloon from "../images/wwcimg/m0batteries.jpeg";
+import mm0 from "../images/wwcimg/mm0keys.jpeg";
+import polybag1 from "../images/wwcimg/p0polybag1.jpg";
+import pp0 from "../images/wwcimg/pp0.jpeg";
+import r0 from "../images/wwcimg/r0Rubber Band.jpeg";
+import WwcPlus from "../images/wwcimg/wwcPlus.jpg";
 import "./WhatWeCollect.css";
 
 const WhatWeCollect = () => {
@@ -36,6 +40,38 @@ const WhatWeCollect = () => {
 		},
 		{
 			id: 4,
+			route: "Glass",
+			heading: "GLASS",
+			text: "Glasses like glass bottles and jars are recycleable.",
+			Eg: "E.g. Bottles of any colour, Jars of any colour, Cosmetics and perfume containers.",
+			img: g0,
+		},
+		{
+			id: 5,
+			route: "Rubber",
+			heading: "RUBBER",
+			text: "Old and worn out rubber item that are no longer usable or any rubber.",
+			Eg: "E.g. Watch straps, cable cover, hot water bottles.",
+			img: r0,
+		},
+		{
+			id: 6,
+			route: "Paper",
+			heading: "PAPER",
+			text: "Any item made of paper or cardboard",
+			Eg: "E.g. Newspaper, files, magazines, egg cartons",
+			img: pp0,
+		},
+		{
+			id: 7,
+			route: "Metal",
+			heading: "METAL",
+			text: "Small items made of metal",
+			Eg: "E.g. Jewelry, keys, foil or utensils",
+			img: mm0,
+		},
+		{
+			id: 8,
 			route: "Misfits",
 			heading: "MISFITS",
 			text: "Misfit items are other household items.",
@@ -46,12 +82,6 @@ const WhatWeCollect = () => {
 	return (
 		<div className="wwc-container">
 			<div className="wwc-header">
-				{/* <img
-					src={WwcImage}
-					width="100%"
-					height={350}
-					className="wwc-img"
-				/> */}
 				<h1 className="header-text">WHAT WE COLLECT</h1>
 			</div>
 			<div className="middle">
@@ -76,9 +106,15 @@ const WhatWeCollect = () => {
 									<br />
 									{item.Eg}
 								</p>
-								{/* <BrowserRouter> */}
-								<Link to={`/${item.route}`}>Find Out More</Link>
-								{/* </BrowserRouter> */}
+								<Link
+									to={`/${item.route}`}
+									style={{
+										textDecoration: "none",
+										color: "#FF3EA5",
+									}}
+								>
+									Find Out More
+								</Link>
 							</div>
 						</div>
 					))}
@@ -98,9 +134,12 @@ const WhatWeCollect = () => {
 							<br />
 							E.g. clunky cardboard or big electronics.
 						</p>
-						{/* <BrowserRouter> */}
-						<Link to="/Plus">Find Out More</Link>
-						{/* </BrowserRouter> */}
+						<Link
+							to="/Plus"
+							style={{textDecoration: "none", color: "#FF3EA5"}}
+						>
+							Find Out More
+						</Link>
 					</div>
 				</div>
 			</div>

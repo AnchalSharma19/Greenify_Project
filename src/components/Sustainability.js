@@ -95,19 +95,20 @@ const Sustainability = () => {
 						decrease the amount of waste that ends up in landfills.
 						The more people recycle, the better the overall impact
 						on the environment, reducing pollution and conserving
-						natural resources. Additionally, Greenify plays a
-						pivotal role in promoting eco-friendly practices. By
-						educating users about the importance of recycling and
-						proper waste management, it fosters a culture of
-						sustainability. This heightened awareness can lead to
-						more sustainable habits in users' daily lives, further
-						supporting environmental conservation efforts.
+						natural resources. <br />
+						Additionally, Greenify plays a pivotal role in promoting
+						eco-friendly practices. By educating users about the
+						importance of recycling and proper waste management, it
+						fosters a culture of sustainability. This heightened
+						awareness can lead to more sustainable habits in users'
+						daily lives, further supporting environmental
+						conservation efforts.
 					</p>
 				</div>
 			</div>
-			<div className="des-items">
+			<div className="des-items fade-in-text">
 				{data.map((item) => (
-					<div className="des-wrap" key={item.id}>
+					<div className="des-wrap " key={item.id}>
 						<div className="des-letter-wrap">
 							<h1 data-text={item.letter}>
 								<span>{item.letter}</span>

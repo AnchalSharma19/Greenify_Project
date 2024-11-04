@@ -1,12 +1,11 @@
 import React from "react";
-import {Link} from "react-router-dom";
-import e1 from "../images/e1charger.jpg";
-import e2 from "../images/e2dryer.jpg";
-import e3 from "../images/e3brokenPhone.jpeg";
-import e4 from "../images/e4.jpg";
+import e1 from "../images/ewasteimg/e1charger.jpg";
+import e2 from "../images/ewasteimg/e2dryer.jpg";
+import e3 from "../images/ewasteimg/e3brokenPhone.jpeg";
+import e4 from "../images/ewasteimg/e4.jpg";
 import "./WwcItem.css";
 
-import packBackground from "../images/topbackground.png";
+import WwcItem from "./WwcItem";
 
 const EWaste = () => {
 	const data = [
@@ -59,47 +58,15 @@ const EWaste = () => {
 			],
 		},
 	];
+	const text = {
+		title: "E-WASTE",
+		text1: "E-waste is an electrical appliance that has a plug or uses a battery.",
+		textl: `Small electronic items that fit in a shopping bag. For example:`,
+	};
 	return (
-		<div className="container-item-w">
-			<div className="full-width-image">
-				<img src={packBackground} alt="Full width banner" />
-			</div>
-			<h1 className="title">E-WASTE</h1>
-			<div className="text-wrap">
-				<h3>
-					E-waste is an electrical appliance that has a plug or uses a
-					battery.
-				</h3>
-
-				<h1>We Collect: </h1>
-				<h3>
-					Small electronic items that fit in a shopping bag. <br />
-					For example:
-				</h3>
-			</div>
-			<div className="listItems-wrap">
-				{/* <div className="listItems-items"> */}
-				{data.map((item) => (
-					<div className="ListItem" key={item.id}>
-						<div className="img-wrap">
-							<img src={item.img} alt="item-image" />
-						</div>
-						<div className="list-item-wrap">
-							<ul>
-								{item.listItems.map((listItem) => (
-									<li className="list-item">{listItem}</li>
-								))}
-							</ul>
-						</div>
-					</div>
-				))}
-				{/* </div> */}
-			</div>
-
-			<Link to="/WhatWeCollect">
-				<h1 className="wwc">WHAT WE COLLECT&#160;&gt;&gt;</h1>
-			</Link>
-		</div>
+		<>
+			<WwcItem data={data} text={text} />
+		</>
 	);
 };
 

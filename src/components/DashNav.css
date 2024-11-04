@@ -1,0 +1,134 @@
+.container-dashnav {
+    width: 20%;
+    background-color: #B0E298;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    margin: 0;
+
+}
+
+.logo-container-dash {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.logo-dash {
+
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.symbol-dash {
+    display: inline;
+    height: 80px;
+    padding: 10px;
+}
+
+.logo_text-dash {
+    font-size: 26px;
+    font-weight: bold;
+    color: #379c2b;
+}
+
+.menu-icon {
+    color: #1D3466;
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.comp-wrap {
+    display: block;
+    margin-top: 20px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: auto 3.5px;
+}
+
+.comp-ele {
+    font-size: 26px;
+    font-weight: 300;
+    padding: 15px;
+    margin: auto 1px;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.comp-ele:hover {
+    background-color: #6883BA;
+    transform: scale(1.02);
+    color: white;
+
+}
+
+.func {
+    margin-top: 40px;
+}
+
+.func-ele {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 0px;
+    color: seashell;
+    transition: all 0.2s ease-in-out;
+}
+
+.func-ele:hover {
+    color: white;
+    background-color: #6883BA;
+}
+
+.open-nav {
+    width: 100vw;
+    height: 90vh;
+    margin: auto;
+    background-color: rgb(0, 0, 0, 0.9);
+    z-index: 99;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .comp-ele,
+    .func-ele {
+        font-size: 20px;
+    }
+
+    .symbol-dash {
+        height: 70px;
+    }
+
+    .logo_text-dash {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .symbol-dash {
+        height: 58px;
+        padding: 6px;
+    }
+
+    .logo_text-dash {
+        font-size: 25px;
+    }
+
+    .func {
+        margin-top: 25px;
+    }
+
+    .open-nav {
+        top: 50px
+    }
+
+}

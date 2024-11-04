@@ -1,0 +1,20 @@
+/* #3D3B8E --> dark blue  */
+/* #6883BA --> light blue  */
+/* #E072A4 --> pink  */
+/* #B0E298 --> green  */
+
+.dash-container {
+    display: flex;
+
+}
+
+.navbar-dash {
+    width: 20%;
+    z-index: 100;
+}
+
+.mainContent-container {
+    width: 80%;
+    /* border: #000 solid; */
+    background-color: #f8f4ef;
+}

@@ -1,10 +1,9 @@
 import React from "react";
-import {Link} from "react-router-dom";
-import c1 from "../images/c1tshirt.jpeg";
-import c2 from "../images/c2shoes1.jpeg";
-import c3 from "../images/c3handbag.jpeg";
-import c4 from "../images/c4towels.jpg";
-import packBackground from "../images/topbackground.png";
+import c1 from "../images/clothimg/c1tshirt.jpeg";
+import c2 from "../images/clothimg/c2shoes1.jpeg";
+import c3 from "../images/clothimg/c3handbag.jpeg";
+import c4 from "../images/clothimg/c4towels.jpg";
+import WwcItem from "./WwcItem";
 import "./WwcItem.css";
 
 const ClothesTextiles = () => {
@@ -57,45 +56,16 @@ const ClothesTextiles = () => {
 			title: "Towels",
 		},
 	];
+	const text = {
+		title: "CLOTHES & TEXTILES",
+		text1: "We collect clothes, textiles, shoes and linen in sellable and unwearable condition.*",
+		textm: "*Please note we cannot accept wet, damp or moldy clothing.",
+		textl: "In sellable condition:",
+	};
 	return (
-		<div className="container">
-			<div className="full-width-image">
-				<img src={packBackground} alt="Full width banner" />
-			</div>
-			<h1 className="title">CLOTHES & TEXTILES</h1>
-			<div className="text-wrap">
-				<h3>
-					We collect clothes, textiles, shoes and linen in sellable
-					and unwearable condition.*
-				</h3>
-				<p>
-					*Please note we cannot accept wet, damp or moldy clothing.
-				</p>
-
-				<h1>We Collect: </h1>
-				<h3>In sellable condition:</h3>
-			</div>
-			<div className="listItems-wrap">
-				{data.map((item) => (
-					<div className="ListItem" key={item.id}>
-						<div className="img-wrap">
-							<img src={item.img} alt="item-image" />
-						</div>
-						<div className="list-item-wrap">
-							<h3>{item.title}</h3>
-							<ul>
-								{item.listItems.map((listItem) => (
-									<li className="list-item">{listItem}</li>
-								))}
-							</ul>
-						</div>
-					</div>
-				))}
-			</div>
-			<Link to="/WhatWeCollect">
-				<h1 className="wwc">WHAT WE COLLECT&#160;&gt;&gt;</h1>
-			</Link>
-		</div>
+		<>
+			<WwcItem data={data} text={text} />
+		</>
 	);
 };
 
