@@ -1,43 +1,44 @@
 // App.js
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import AboutUs from "./components/AboutUs";
 import Bechange from "./components/Bechange";
+import ClothesTextiles from "./components/ClothesTextiles";
 import Collect from "./components/Collect";
+import ContactUs from "./components/ContactUs";
+import Dashboard from "./components/Dashboard";
+import EWaste from "./components/EWaste";
 import Forgetpass from "./components/ForgetPass";
 import Getstarted from "./components/Getstarted";
+import Glass from "./components/Glass";
 import Hero from "./components/Hero";
 import HowToPack from "./components/HowToPack";
 import Layout from "./components/Layout";
+import Metal from "./components/Metal";
+import Misfits from "./components/Misfits";
 import OurApproach from "./components/OurApproach";
-import SignUp from "./components/SignUp";
-import Team from "./components/Team";
-import Work from "./components/Work";
+import Paper from "./components/Paper";
 import Process from "./components/Process";
 import Recycle from "./components/Recycle";
 import RecycleProcess from "./components/RecycleProcess";
-import ClothesTextiles from "./components/ClothesTextiles";
-import ContactUs from "./components/ContactUs";
-import EWaste from "./components/EWaste";
-import Glass from "./components/Glass";
-import Metal from "./components/Metal";
-import Misfits from "./components/Misfits";
-import Paper from "./components/Paper";
 import Rubber from "./components/Rubber";
+import SignUp from "./components/SignUp";
+import Slot from "./components/Slot";
 import SoftPlastic from "./components/SoftPlastic";
 import Sustainability from "./components/Sustainability";
+import Team from "./components/Team";
 import WhatWeCollect from "./components/WhatWeCollect";
-import Dashboard from "./components/Dashboard";
-import Slot from "./components/Slot";
+import Work from "./components/Work";
 
 import ChatBot from "./components/chatbot";
 
-
-import History from "./components/Histroy";
 import DashNav from "./components/DashNav";
+import History from "./components/Histroy";
 import Reward from "./components/Reward";
 
 import "./App.css";
+import Confirmation from "./components/Confirmation";
+import Congratulation from "./components/Congratulation";
 
 function App() {
 	return (
@@ -216,7 +217,8 @@ function App() {
 						path="/Dashboard"
 						element={
 							<div className="dashboard-layout">
-								<DashNav /> {/* Sidebar that stays on every page */}
+								<DashNav />{" "}
+								{/* Sidebar that stays on every page */}
 								<div className="main-content">
 									<Dashboard />
 								</div>
@@ -230,6 +232,28 @@ function App() {
 								<DashNav />
 								<div className="main-content">
 									<Slot />
+								</div>
+							</div>
+						}
+					/>
+					<Route
+						path="/Confirmation"
+						element={
+							<div className="dashboard-layout">
+								<DashNav />
+								<div className="main-content">
+									<Confirmation />
+								</div>
+							</div>
+						}
+					/>
+					<Route
+						path="/Congratulation"
+						element={
+							<div className="dashboard-layout">
+								<DashNav />
+								<div className="main-content">
+									<Congratulation />
 								</div>
 							</div>
 						}
@@ -257,7 +281,7 @@ function App() {
 						}
 					/>
 				</Routes>
-				<ChatBot /> 
+				<ChatBot />
 			</div>
 		</Router>
 	);

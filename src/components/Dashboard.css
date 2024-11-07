@@ -15,6 +15,7 @@
 
 .mainContent-container {
     width: 80%;
+    margin: auto;
     /* border: #000 solid; */
     background-color: #f8f4ef;
 }

@@ -12,17 +12,12 @@ import {
 	GiWaterBottle,
 } from "react-icons/gi";
 import {Link} from "react-router-dom";
+// import {Link} from "react-";
 
 const Pickup = () => {
-	// const [isChecked, setIsChecked] = useState(false);
-	// const handleCheckboxChange = (event) => {
-	// 	setIsChecked(!isChecked);
-	// };
-	// useEffect(() => {
-	// 	setIsChecked(false);
-	// }, [handleCheckboxChange]);
-	// const handleBtn = () => {
-	// 	return <Link to="/Slot"></Link>;
+	// const [isSelected, setIsSelected] = useState(false);
+	// const handleClick = () => {
+	// 	setIsSelected(true);
 	// };
 	const data = [
 		{
@@ -68,36 +63,34 @@ const Pickup = () => {
 	];
 
 	return (
-		<div className="pickup-container">
-			<div className="text-container">
-				<h1>Welcome To Greenify JANAKI</h1>
-				<h3>Select everything you need to recycle.</h3>
-			</div>
-			<div className="material-container">
-				{data.map((item) => (
-					<div className="material-box" key={item.id}>
-						<div className="material-icon">{item.icon}</div>
-						<div className="material-text">
-							<p>{item.title}</p>
-						</div>
-						<div className="material-checkbox">
-							<input type="checkbox" />
-						</div>
-					</div>
-				))}
-			</div>
-			<div className="continue-btn">
-				<Link to="/Slot">
-					<button className="btn">CONTINUE...</button>
-				</Link>
-			</div>
-			{/* {isChecked && (
-				<div>
+		<>
+			{/* {!isSelected && ( */}
+			{/* // <> */}
+			<div className="pickup-container">
+				<div className="text-container">
 					<h1>Welcome To Greenify JANAKI</h1>
 					<h3>Select everything you need to recycle.</h3>
 				</div>
-			)} */}
-		</div>
+				<div className="material-container">
+					{data.map((item) => (
+						<div className="material-box" key={item.id}>
+							<div className="material-icon">{item.icon}</div>
+							<div className="material-text">
+								<p>{item.title}</p>
+							</div>
+							<div className="material-checkbox">
+								<input type="checkbox" />
+							</div>
+						</div>
+					))}
+				</div>
+				<div className="continue-btn">
+					<Link to="/Slot">
+						<button className="btn">CONTINUE</button>
+					</Link>
+				</div>
+			</div>
+		</>
 	);
 };
 
