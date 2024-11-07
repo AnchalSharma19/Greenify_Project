@@ -28,15 +28,15 @@ import SoftPlastic from "./components/SoftPlastic";
 import Sustainability from "./components/Sustainability";
 import WhatWeCollect from "./components/WhatWeCollect";
 import Dashboard from "./components/Dashboard";
-import Slot from "./components/Slot";
-<<<<<<< HEAD
-import ChatBot from "./components/chatbot";
+// import Slot from "./components/Slot";
+// <<<<<<< HEAD
+// import ChatBot from "./components/chatbot";
 
-=======
-import History from "./components/Histroy";
-import DashNav from "./components/DashNav";
-import Reward from "./components/Reward";
->>>>>>> d4d3a00b6704416ce43418a0930b5a92e704236a
+// =======
+// import History from "./components/Histroy";
+// import DashNav from "./components/DashNav";
+// import Reward from "./components/Reward";
+// >>>>>>> d4d3a00b6704416ce43418a0930b5a92e704236a
 import "./App.css";
 
 function App() {
