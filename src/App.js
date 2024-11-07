@@ -1,6 +1,6 @@
 // App.js
 import React from "react";
-import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AboutUs from "./components/AboutUs";
 import Bechange from "./components/Bechange";
 import Collect from "./components/Collect";
@@ -13,11 +13,9 @@ import OurApproach from "./components/OurApproach";
 import SignUp from "./components/SignUp";
 import Team from "./components/Team";
 import Work from "./components/Work";
-
 import Process from "./components/Process";
 import Recycle from "./components/Recycle";
 import RecycleProcess from "./components/RecycleProcess";
-
 import ClothesTextiles from "./components/ClothesTextiles";
 import ContactUs from "./components/ContactUs";
 import EWaste from "./components/EWaste";
@@ -29,10 +27,11 @@ import Rubber from "./components/Rubber";
 import SoftPlastic from "./components/SoftPlastic";
 import Sustainability from "./components/Sustainability";
 import WhatWeCollect from "./components/WhatWeCollect";
-
 import Dashboard from "./components/Dashboard";
 import Slot from "./components/Slot";
-
+import History from "./components/Histroy";
+import DashNav from "./components/DashNav";
+import Reward from "./components/Reward";
 import "./App.css";
 
 function App() {
@@ -40,6 +39,7 @@ function App() {
 		<Router>
 			<div className="App">
 				<Routes>
+					{/* Main Layout Routes */}
 					<Route
 						path="/"
 						element={
@@ -85,7 +85,6 @@ function App() {
 							</Layout>
 						}
 					/>
-					{/*<Route path="/Hero" element={<Layout><Hero /></Layout>} /> */}
 					<Route
 						path="/OurApproach"
 						element={
@@ -102,7 +101,6 @@ function App() {
 							</Layout>
 						}
 					/>
-
 					<Route
 						path="/Recycle"
 						element={
@@ -119,10 +117,7 @@ function App() {
 							</Layout>
 						}
 					/>
-
-					{/* wwc */}
 					<Route
-						exact
 						path="/WhatWeCollect"
 						element={
 							<Layout>
@@ -130,9 +125,7 @@ function App() {
 							</Layout>
 						}
 					/>
-					{/* What we collect items*/}
 					<Route
-						exact
 						path="/Misfits"
 						element={
 							<Layout>
@@ -141,7 +134,6 @@ function App() {
 						}
 					/>
 					<Route
-						exact
 						path="/SoftPlastic"
 						element={
 							<Layout>
@@ -197,29 +189,68 @@ function App() {
 							</Layout>
 						}
 					/>
-					{/* sustainability */}
 					<Route
 						path="/Sustainability"
 						element={
 							<Layout>
-								{" "}
-								<Sustainability />{" "}
+								<Sustainability />
 							</Layout>
 						}
 					/>
-					{/* Contact us */}
 					<Route
 						path="/ContactUs"
 						element={
 							<Layout>
-								{" "}
-								<ContactUs />{" "}
+								<ContactUs />
 							</Layout>
 						}
 					/>
-					{/* Dashboard */}
-					<Route path="/Dashboard" element={<Dashboard />} />
-					<Route path="/Slot" element={<Slot />} />
+
+					{/* Dashboard Routes with DashNav */}
+					<Route
+						path="/Dashboard"
+						element={
+							<div className="dashboard-layout">
+								<DashNav /> {/* Sidebar that stays on every page */}
+								<div className="main-content">
+									<Dashboard />
+								</div>
+							</div>
+						}
+					/>
+					<Route
+						path="/Slot"
+						element={
+							<div className="dashboard-layout">
+								<DashNav />
+								<div className="main-content">
+									<Slot />
+								</div>
+							</div>
+						}
+					/>
+					<Route
+						path="/History"
+						element={
+							<div className="dashboard-layout">
+								<DashNav />
+								<div className="main-content">
+									<History />
+								</div>
+							</div>
+						}
+					/>
+					<Route
+						path="/Reward"
+						element={
+							<div className="dashboard-layout">
+								<DashNav />
+								<div className="main-content">
+									<Reward />
+								</div>
+							</div>
+						}
+					/>
 				</Routes>
 			</div>
 		</Router>

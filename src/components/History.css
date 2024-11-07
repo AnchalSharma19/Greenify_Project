@@ -1,0 +1,97 @@
+.history {
+    padding: 20px;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+.history-actions button {
+    margin-left: 10px;
+}
+
+.history-actions button:hover {
+    margin-left: 10px;
+    color: black;
+    background-color: #F7D118;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.history-table th,
+.history-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.history-table th {
+    background-color: #f4f4f4;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.status.completed {
+    background-color: green;
+}
+
+.status.cancelled {
+    background-color: red;
+}
+
+.status.pending {
+    background-color: yellow;
+    color: black;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination span {
+    margin-top: 30px;
+}
+
+
+
+/* Button styling */
+.page-btn {
+    margin: 0 5px;
+    padding: 8px 12px;
+    background-color: #FF3EA5;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.page-btn:hover {
+    background-color: #F7D118;
+    color: black;
+}
+
+.error {
+    color: red;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+
+}
