@@ -32,6 +32,7 @@ import WhatWeCollect from "./components/WhatWeCollect";
 
 import Dashboard from "./components/Dashboard";
 import Slot from "./components/Slot";
+import ChatBot from "./components/chatbot";
 
 import "./App.css";
 
@@ -221,6 +222,7 @@ function App() {
 					<Route path="/Dashboard" element={<Dashboard />} />
 					<Route path="/Slot" element={<Slot />} />
 				</Routes>
+				<ChatBot /> 
 			</div>
 		</Router>
 	);
