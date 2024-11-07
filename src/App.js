@@ -29,7 +29,7 @@ import Sustainability from "./components/Sustainability";
 import WhatWeCollect from "./components/WhatWeCollect";
 import Dashboard from "./components/Dashboard";
 import Slot from "./components/Slot";
-// <<<<<<< HEAD
+
 import ChatBot from "./components/chatbot";
 
 
