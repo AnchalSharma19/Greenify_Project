@@ -113,8 +113,37 @@ input[type=reset] {
 }
 
 .btn {
-    width: 250px;
+    width: 8em;
     height: 50px;
     font-size: 28px;
     border-radius: 8px;
+}
+
+@media screen and (max-width: 760px) {
+    .date-time-container {
+        width: 80%;
+    }
+
+    form {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .date-time-container {
+        width: 90%;
+    }
+
+    form {
+        max-width: 90%;
+    }
+
+    .continue-btn {
+        width: 80%;
+        margin: auto;
+    }
+
+    .btn {
+        width: 7em;
+    }
 }
