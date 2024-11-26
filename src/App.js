@@ -1,6 +1,6 @@
 // App.js
 import React from "react";
-import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import AboutUs from "./components/AboutUs";
 import Bechange from "./components/Bechange";
 import ClothesTextiles from "./components/ClothesTextiles";
@@ -39,6 +39,11 @@ import Reward from "./components/Reward";
 import "./App.css";
 import Confirmation from "./components/Confirmation";
 import Congratulation from "./components/Congratulation";
+
+import Shop from "./components/Shop";
+import Success from "./components/Sucess";
+import Fail from "./components/Fail";
+
 
 function App() {
 	return (
@@ -281,6 +286,15 @@ function App() {
 						}
 					/>
 				</Routes>
+
+
+				<Routes>
+					<Route path="/shop" element={<Shop />} />
+					<Route path="/success" element={<Success />} />
+					<Route path="/fail" element={<Fail />} />
+				</Routes>
+
+
 				<ChatBot />
 			</div>
 		</Router>

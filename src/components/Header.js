@@ -36,8 +36,6 @@ const Header = () => {
                 ☰
             </div>
             <nav className={`nav ${isOpen ? 'open' : ''}`}>
-                <Link to="/" onClick={toggleMenu}>Home</Link>
-
                 {/* About Dropdown */}
                 <div className="dropdown">
                     <a onClick={toggleAboutDropdown}>
@@ -52,6 +50,8 @@ const Header = () => {
                         </div>
                     )}
                 </div>
+
+                <Link to="/shop" onClick={toggleMenu}>Shop</Link>
 
                 {/* How It Works Dropdown */}
                 <div className="dropdown">
@@ -70,8 +70,8 @@ const Header = () => {
                 </div>
 
                 <Link to="/WhatWeCollect">What we Collect</Link>
-				<Link to="/Sustainability" onClick={toggleMenu}>Sustainability</Link>
-				<Link to="/ContactUs" onClick={toggleMenu}>Contact Us</Link>
+                <Link to="/Sustainability" onClick={toggleMenu}>Sustainability</Link>
+                <Link to="/ContactUs" onClick={toggleMenu}>Contact Us</Link>
             </nav>
         </header>
     );
