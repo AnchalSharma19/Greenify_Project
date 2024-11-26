@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
+import Article from "./Article";
+import Quiz from "./Quiz";
 import "./Sustainability.css";
 
 const Sustainability = () => {
+	const [activeQuiz, setActiveQuiz] = useState(null);
+	const [showButton, setShowButton] = useState(true);
 	const data = [
 		{
 			id: 1,
@@ -79,6 +83,14 @@ const Sustainability = () => {
 			],
 		},
 	];
+	const handleQuiz = () => {
+		setActiveQuiz(true);
+		setShowButton(false);
+	};
+	const handleQuizClose = () => {
+		setActiveQuiz(null);
+		setShowButton(true);
+	};
 	return (
 		<div className="container">
 			<div className="header-wrap-sus">
@@ -124,6 +136,36 @@ const Sustainability = () => {
 						</div>
 					</div>
 				))}
+			</div>
+			<div className="article-sus-container">
+				<Article />
+			</div>
+			<div className="quizz-container">
+				{showButton && (
+					<>
+						<h2>Test Your Knowledge here!</h2>
+						<button
+							className="quiz-start-button"
+							onClick={handleQuiz}
+						>
+							Start Quiz
+						</button>
+					</>
+				)}
+
+				{activeQuiz && (
+					<div>
+						<Quiz />
+						<div>
+							<button
+								className="quiz-start-button"
+								onClick={handleQuizClose}
+							>
+								Close
+							</button>
+						</div>
+					</div>
+				)}
 			</div>
 		</div>
 	);
